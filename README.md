@@ -1,2 +1,3 @@
-# taalgenie
-Een Nederlandstalige website voor het leren van Nederlands
+# Taalgenie
+
+Een Nederlandstalige website voor het leren van Nederlands.

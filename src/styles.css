@@ -1,0 +1,34 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.black-theme {
+  width: 100%;
+  height: 100%;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-size: 100%;
+}
+
+.white-theme {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  /* width: 100%; */
+  height: 85vh;
+  margin: 0 25px;
+}
+
+.templated .input-field.inline {
+  vertical-align: baseline;
+}

@@ -39,8 +39,9 @@ class MaterialBoxCustomElement extends HTMLElement {
     if (!src) {
       return;
     }
-    const shadow = (this.attachShadow({ mode: 'open' }) as unknown) as HTMLElement;
-    m.render(shadow, [m(MaterialBox, { src })]);
+    // const shadow = (this.attachShadow({ mode: 'open' }) as unknown) as HTMLElement;
+    // m.render(shadow, [m(MaterialBox, { src })]);
+    m.render(this, [m(MaterialBox, { src })]);
   }
 }
 

@@ -20,6 +20,7 @@
   "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
   "license": "MIT",
   "dependencies": {
+    "@webcomponents/custom-elements": "^1.2.1",
     "material-icons": "^0.3.0",
     "materialize-css": "^1.0.0",
     "mithril": "^2.0.0-rc.3",

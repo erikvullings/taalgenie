@@ -4,48 +4,6 @@ import spelling from '../../content/werkwoordspelling.md';
 import { vindDeStam } from './../../exercises/oefeningen-werkwoordspelling';
 import { Exercise } from '../exercise/exercise-component';
 import { IExerciseTemplate } from './../../models/exercise';
-// import { CustomTemplate } from '../helpers/custom-template';
-import { MaterialBox } from 'mithril-materialized';
-
-// class CustomElement extends HTMLElement {
-//   public connectedCallback() {
-//     const src = this.getAttribute('src');
-
-//     const shadow = (this.attachShadow({ mode: 'open' }) as unknown) as HTMLElement;
-//     m.render(shadow, [
-//       m('h2', `I'm a custom element`),
-
-//       m(
-//         'p',
-//         'Please find below an image whose source is ',
-//         m(
-//           'a',
-//           {
-//             href: src,
-//           },
-//           src
-//         )
-//       ),
-//       m('img', { src }),
-//     ]);
-//   }
-// }
-
-// customElements.define('my-custom-element', CustomElement);
-
-class MaterialBoxCustomElement extends HTMLElement {
-  public connectedCallback() {
-    const src = this.getAttribute('data-src');
-    if (!src) {
-      return;
-    }
-    // const shadow = (this.attachShadow({ mode: 'open' }) as unknown) as HTMLElement;
-    // m.render(shadow, [m(MaterialBox, { src })]);
-    m.render(this, [m(MaterialBox, { src })]);
-  }
-}
-
-customElements.define('material-box', MaterialBoxCustomElement);
 
 export const WerkwoordspellingPage = () => {
   const exercises = [

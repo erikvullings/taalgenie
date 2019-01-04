@@ -46,13 +46,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot|pdf)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/',
+              outputPath: 'assets/',
             },
           },
         ],
@@ -63,7 +63,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              attrs: [':data-src'],
+              attrs: [':data-src', 'a:href'],
             },
           },
           {

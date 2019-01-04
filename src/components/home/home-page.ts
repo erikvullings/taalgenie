@@ -6,7 +6,7 @@ export const HomePage = () => {
   return {
     view: () =>
       m('.row', [
-        m('.col.s12.m7.l8', m('.introduction', m.trust(welkom))),
+        m('.col.s12.m7.l8', m('.introduction', { id: 'intro' }, m.trust(welkom))),
         m('.col.s12.m5.l4', [
           m('h1', m('h1', 'Inhoudsopgave')),
           m('ul.collection', [

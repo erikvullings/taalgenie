@@ -9,7 +9,7 @@ module.exports = merge(common, {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../docs'),
-    publicPath: 'http://erikvullings.github.io/taalgenie',
+    publicPath: 'https://erikvullings.github.io/taalgenie',
   },
   optimization: {
     splitChunks: {

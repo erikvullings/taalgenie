@@ -20,8 +20,8 @@ devDependencies:
   postcss-preset-env: 6.5.0
   raw-loader: 1.0.0
   style-loader: 0.23.1
+  terser-webpack-plugin: 1.2.1
   typescript: 3.2.2
-  uglifyjs-webpack-plugin: 2.1.1
   url-loader: 1.1.2
   webpack: 4.28.3
   webpack-bundle-analyzer: 3.0.3
@@ -5451,23 +5451,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
-  /uglifyjs-webpack-plugin/2.1.1:
-    dependencies:
-      cacache: 11.3.2
-      find-cache-dir: 2.0.0
-      schema-utils: 1.0.0
-      serialize-javascript: 1.6.1
-      source-map: 0.6.1
-      uglify-js: 3.4.9
-      webpack-sources: 1.3.0
-      worker-farm: 1.6.0
-    dev: true
-    engines:
-      node: '>= 6.9.0'
-    peerDependencies:
-      webpack: ^4.0.0
-    resolution:
-      integrity: sha512-TQEcyMNkObX/H+FfcKjiDgs5RcXX8vW2UUUrDTOfQgg3lrafztfeM5WAwXo+AzqozJK6NP9w98xNpG/dutzSsg==
   /union-value/1.0.0:
     dependencies:
       arr-union: 3.1.0
@@ -5943,8 +5926,8 @@ specifiers:
   postcss-preset-env: ^6.5.0
   raw-loader: ^1.0.0
   style-loader: ^0.23.1
+  terser-webpack-plugin: ^1.2.1
   typescript: ^3.2.2
-  uglifyjs-webpack-plugin: ^2.1.1
   url-loader: ^1.1.2
   webpack: ^4.28.3
   webpack-bundle-analyzer: ^3.0.3

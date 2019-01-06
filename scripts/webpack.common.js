@@ -8,7 +8,6 @@ const title = 'Taalgenie';
 module.exports = {
   entry: {
     app: './src/app.ts',
-    // print: './src/print.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -89,5 +88,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.mjs'],
   },
-  plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin(['dist']), new HtmlWebpackPlugin({ title: title })],
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({ title: title, favicon: 'src/assets/favicon.ico' }),
+  ],
 };

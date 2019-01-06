@@ -23,10 +23,8 @@ body {
 }
 
 .container {
-  position: relative;
   /* width: 100%; */
   height: 85vh;
-  margin: 0 25px;
 }
 
 .templated .input-field.inline {

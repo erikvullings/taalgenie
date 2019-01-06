@@ -1,7 +1,13 @@
 import m, { Component } from 'mithril';
 import { routeFromTitle } from '../../helpers/utils';
 import spelling from '../../content/werkwoordspelling.md';
-import { vindDeStam } from './../../exercises/oefeningen-werkwoordspelling';
+import {
+  vindDeStam,
+  vindOnvoltooidDeelwoord,
+  vindVoltooidDeelwoord,
+  vindBijvoegelijkNaamwoord,
+  vindTegenwoordigeTijd,
+} from './../../exercises/oefeningen-werkwoordspelling';
 import { Exercise } from '../exercise/exercise-component';
 import { IExerciseTemplate } from './../../models/exercise';
 
@@ -11,13 +17,31 @@ export const WerkwoordspellingPage = () => {
       title: 'Vind de stam',
       count: 5,
       repeat: 5,
-      exercise: vindDeStam({ mode: 'zwak' }),
+      exercise: vindDeStam(),
     },
     {
-      title: 'Vind de stam (sterk)',
+      title: 'Wat is het onvoltooid deelwoord',
       count: 5,
       repeat: 5,
-      exercise: vindDeStam({ mode: 'sterk' }),
+      exercise: vindOnvoltooidDeelwoord(),
+    },
+    {
+      title: 'Wat is het voltooid deelwoord',
+      count: 5,
+      repeat: 5,
+      exercise: vindVoltooidDeelwoord(),
+    },
+    {
+      title: 'Werkwoord als BN',
+      count: 5,
+      repeat: 5,
+      exercise: vindBijvoegelijkNaamwoord(),
+    },
+    {
+      title: 'De tegenwoordige tijd',
+      count: 5,
+      repeat: 5,
+      exercise: vindTegenwoordigeTijd(),
     },
   ] as IExerciseTemplate[];
   return {

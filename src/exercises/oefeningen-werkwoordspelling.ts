@@ -33,7 +33,7 @@ const vindStam = (ww: IWerkwoord) => {
   const removedPrefix = removePrefix(removedEn);
   const removedDoubles = removeDoubles(removedPrefix.base);
   const doubledVowels = removedPrefix.base === removedDoubles ? insertVowel(removedDoubles) : removedDoubles;
-  return removedPrefix.pre + doubledVowels.replace(replaceVF, 'f').replace(replaceZS, 'z');
+  return removedPrefix.pre + doubledVowels.replace(replaceVF, 'f').replace(replaceZS, 's');
 };
 
 /** stam + t (behalve als de 'stam' al eindigt met een 't') */
@@ -138,8 +138,11 @@ const vindVT = (cur: IWerkwoord, enkelvoud = true) => {
 
 // OEFENINGEN
 
+// Komen, rijzen
+
 export const vindDeStam: ExerciseFactory<{}> = () => {
   const ww = [...SterkeWW, ...ZwakkeWW] as IWerkwoord[];
+  console.warn('komen: ' + vindStam({ inf: 'komen' }));
   // const ww = (mode === 'sterk' ? SterkeWW : ZwakkeWW) as IWerkwoord[];
   return {
     question: `Wat is de stam?`,

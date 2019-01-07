@@ -3,8 +3,8 @@
 In het Nederlands kennen we regelmatige (zwakke) en onregelmatige (sterke) werkwoorden. De onregelmatige werkwoorden moet je gewoon uit je hoofd leren, maar voor de regelmatige zijn gelukkig wel regels te geven. Een samenvatting van deze regels vind je in het schema hieronder.
 
 <figure>
-  <material-box data-src='/assets/werkwoordspelling/werkwoordspelling.png'></material-box>
-  <figcaption>Fig.1 - Werkwoordspelling <a target="_blank" href='/assets/werkwoordspelling/werkwoordspelling.pdf'>PDF versie</a>.</figcaption>
+  <material-box data-src='/werkwoordspelling/werkwoordspelling.png'></material-box>
+  <figcaption>Fig.1 - Werkwoordspelling <a target="_blank" href='/werkwoordspelling/werkwoordspelling.pdf'>PDF versie</a>.</figcaption>
 </figure>
 
 ## Tegenwoordige tijd

@@ -4,10 +4,14 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack'); //to access built-in plugins
 
 const title = 'Taalgenie';
+// Since we use the scripts folder, define the 'src' folder as the main point of entry
+// Most paths are derived from there, e.g. the HTML-loader also uses it to resolve image paths.
+const context = path.resolve(__dirname, '../src');
 
 module.exports = {
+  context,
   entry: {
-    app: './src/app.ts',
+    app: './app.ts',
   },
   output: {
     filename: '[name].bundle.js',
@@ -62,6 +66,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
+              root: path.resolve(context, 'assets'),
               attrs: [':data-src', 'a:href'],
             },
           },
@@ -91,6 +96,6 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({ title: title, favicon: 'src/assets/favicon.ico' }),
+    new HtmlWebpackPlugin({ title: title, favicon: './assets/favicon.ico' }),
   ],
 };

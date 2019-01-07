@@ -270,3 +270,12 @@ export const toLocale = (s: string | number) => {
       : s
     : s.toLocaleString(language, { useGrouping: false });
 };
+
+/**
+ * Flip a coin and randomly get back true or false.
+ *
+ */
+export const flipCoin = () => Math.random() > 0.5;
+
+/** Compose a series of functies */
+// export const pipe = (...fncs: Array<(x: any) => any>) => <T>(x: T) => fncs.reduce((y, f) => f(y), x);

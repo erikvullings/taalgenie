@@ -7,6 +7,7 @@ import {
   vindVoltooidDeelwoord,
   vindBijvoegelijkNaamwoord,
   vindTegenwoordigeTijd,
+  vindVerledenTijd,
 } from './../../exercises/oefeningen-werkwoordspelling';
 import { Exercise } from '../exercise/exercise-component';
 import { IExerciseTemplate } from './../../models/exercise';
@@ -14,19 +15,19 @@ import { IExerciseTemplate } from './../../models/exercise';
 export const WerkwoordspellingPage = () => {
   const exercises = [
     {
-      title: 'Vind de stam',
+      title: 'Vind de stam!',
       count: 5,
       repeat: 5,
       exercise: vindDeStam(),
     },
     {
-      title: 'Wat is het onvoltooid deelwoord',
+      title: 'Wat is het onvoltooid deelwoord?',
       count: 5,
       repeat: 5,
       exercise: vindOnvoltooidDeelwoord(),
     },
     {
-      title: 'Wat is het voltooid deelwoord',
+      title: 'Wat is het voltooid deelwoord?',
       count: 5,
       repeat: 5,
       exercise: vindVoltooidDeelwoord(),
@@ -42,6 +43,18 @@ export const WerkwoordspellingPage = () => {
       count: 5,
       repeat: 5,
       exercise: vindTegenwoordigeTijd(),
+    },
+    {
+      title: 'De verleden tijd (zwak)',
+      count: 5,
+      repeat: 5,
+      exercise: vindVerledenTijd(),
+    },
+    {
+      title: 'De verleden tijd (sterk)',
+      count: 5,
+      repeat: 5,
+      exercise: vindVerledenTijd({ mode: 'sterk' }),
     },
   ] as IExerciseTemplate[];
   return {
